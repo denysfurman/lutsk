@@ -468,6 +468,14 @@
 	    background-color: #f0b5b5;
 	   
 	}
+	.about .about_text p {
+	    font-size: 14px;
+	    font-weight: 700;
+	    line-height: 19px;
+	    font-variant: small-caps;
+	    letter-spacing: 1px;
+	    text-align: justify;
+	}
 
 
 
