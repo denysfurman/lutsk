@@ -9,21 +9,19 @@
 	<meta charset="utf-8">
 
 	<title>Заголовок</title>
+	
 	<meta name="description" content="">
-
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
 	<link rel="stylesheet" href="libs/font-awesome-4.6.3/css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="libs/animate/animate.css">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-	
-	
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -40,33 +38,55 @@
 		<div class="header_logo">
 			<a href="#"><img src="img/logo_header.png" alt=""></a>
 		</div>
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="cross">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div class="heade_mob_menu">
+			
+			<div class="header_menu_wr">
+				<ul class="header_menu">
+					<li><a href="#" class="current">ГЛАВНАЯ</a></li>
+					<li><a href="#">О НАС</a></li>
+				</ul>
+				<ul class="header_lang">
+					<li><a href="#" class="current">RUS</a></li>
+					<li><a href="#">ENG</a></li>
+				</ul>
+			</div>
+
+			<div class="header_contact">
+				<p class="visibility-xs hidden-sm hidden-md hidden-lg"> <b>Контакты</b></p>
+				<a href="#">+38 048 79438 60</a>
+				<a href="#">+38 050 764 93 23</a>
+				<a href="#" class="email">irinagurjeva@top-tour.com</a>
+
+			</div>
+
+			
+		</div>
 
 	
-		<div class="header_contact">
-			<a href="#">+38 048 79438 60</a>
-			<a href="#">+38 050 764 93 23</a>
-			<a href="#" class="email">irinagurjeva@top-tour.com</a>
-
-		</div>
-		<div class="header_menu_wr">
-			<ul class="header_menu">
-				<li><a href="#" class="current">ГЛАВНАЯ</a></li>
-				<li><a href="#">О НАС</a></li>
-			</ul>
-			<ul class="header_lang">
-				<li><a href="#" class="current">RUS</a></li>
-				<li><a href="#">ENG</a></li>
-			</ul>
-		</div>
+		
 	</header>
 	
 	<section class="main_text">
 		
 		<div class="main_text_img">
-			<img src="img/top_ayurveda.png" alt="">
+			<img class="hidden-xs" src="img/top_ayurveda.png " alt="">
+			<img class="visibility-xs hidden-sm hidden-md hidden-lg" src="img/top_ayurveda_mob.png " alt="">
 		</div>
 
-		<img class="main_text_mangala" src="img/mandala.png" alt="" class="mangala">
+		<img class="main_text_mangala hidden-xs" src="img/mandala.png" alt="" class="mangala">
+		<img class="main_text_mangala visibility-xs hidden-sm hidden-md hidden-lg" src="img/mandala_mob.png" alt="" class="mangala">
 				
 	</section>
 
@@ -84,6 +104,7 @@
 	</section>
 
 	<section class="service">
+		<h1 class="visibility-xs hidden-sm hidden-md hidden-lg">БЮДЖЕТНЫЕ ПОЕЗДКИ <br/> С ХОРОШИМ ЛЕЧЕНИЕМ</h1>
 		<div class="service_img left_part " style="background-image: url(img/masag.jpg);"></div>
 		<div class="service_text right_part">
 			<h1 class="">БЮДЖЕТНЫЕ ПОЕЗДКИ <br/> С ХОРОШИМ ЛЕЧЕНИЕМ</h1>
@@ -97,7 +118,7 @@
 	<section class="hotels">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 hidden-xs">
 					<div class="hotel_item">
 						<img src="img/small picture.jpg" alt="">
 						<p>НАЗВАНИЕ ОТЕЛЯ</p>
@@ -105,7 +126,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 hidden-xs">
 					<div class="hotel_item">
 						<img src="img/small picture.jpg" alt="">
 						<p>НАЗВАНИЕ ОТЕЛЯ</p>
@@ -113,7 +134,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 hidden-xs">
 					<div class="hotel_item">
 						<img src="img/small picture.jpg" alt="">
 						<p>НАЗВАНИЕ ОТЕЛЯ</p>
@@ -121,7 +142,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 hidden-xs">
 					<div class="hotel_item">
 						<img src="img/small picture.jpg" alt="">
 						<p>НАЗВАНИЕ ОТЕЛЯ</p>
@@ -129,7 +150,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 hidden-xs">
 					<div class="hotel_item">
 						<img src="img/small picture.jpg" alt="">
 						<p>НАЗВАНИЕ ОТЕЛЯ</p>
@@ -137,11 +158,46 @@
 					</div>
 				</div>
 
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 hidden-xs">
 					<div class="hotel_item">
 						<img src="img/small picture.jpg" alt="">
 						<p>НАЗВАНИЕ ОТЕЛЯ</p>
 						<a href="" class="button">ПОДРОБНЕЕ</a>
+					</div>
+				</div>
+				
+				<!-- MOBILE ITEN SLIDER  -->
+
+				<div class="col-xs-12 visibility-xs hidden-sm hidden-md hidden-lg">
+					<div class="mobile_item_slider">
+						<div class="item">
+							<div class="hotel_item">
+								<img src="img/small picture.jpg" alt="">
+								<p>НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="hotel_item">
+								<img src="img/small picture.jpg" alt="">
+								<p>НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="hotel_item">
+								<img src="img/small picture.jpg" alt="">
+								<p>НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="hotel_item">
+								<img src="img/small picture.jpg" alt="">
+								<p>НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -155,9 +211,10 @@
 
 
 	<section class="service">
+		<h1 class="visibility-xs hidden-sm hidden-md hidden-lg">БЮДЖЕТНЫЕ ПОЕЗДКИ <br/> С ХОРОШИМ ЛЕЧЕНИЕМ</h1>
 		<div class="service_img right_part" style="background-image: url(img/masag.jpg);"></div>
 		<div class="service_text left_part" >
-			<h1>ПЛЯЖНЫЕ САНАТОРИИ<br/> У МОРЯ</h1>
+			
 			<span class="service_text_line"></span>
 			<p> Nullam sit amet tortor accumsan, fermentum sem vitae, eleifend arcu. Donec tincidunt, metus ac vestibulum maximus, nisl enim vestibulum leo, nec tincidunt enim libero in sem. Praesent mollis sapien quis nisi auctor, vitae hendrerit mauris dictum. Aliquam semper nulla  quam, id tincidunt nulla dapibus non. Mauris iaculis lectus vel magna porta consequat vel quis odio. Suspendisse maximus elit tortor, et mollis sem lobortis in. Proin orci eros, congue vel nisl ac, rhoncus imperdiet nisl. Pellentesque feugiat mi ac nulla volutpat, id suscipit ligula suscipit. Suspendisse quis </p>
 
@@ -166,6 +223,7 @@
 	</section>
 
 	<section class="service">
+		<h1 class="visibility-xs hidden-sm hidden-md hidden-lg">БЮДЖЕТНЫЕ ПОЕЗДКИ <br/> С ХОРОШИМ ЛЕЧЕНИЕМ</h1>
 		<div class="service_img left_part" style="background-image: url(img/masag.jpg);"></div>
 		<div class="service_text right_part">
 			<h1>КОМФОРТАБЕЛЬНЫЕ <br/> КЛИНИКИ АЮРВЕДЫ</h1>
@@ -177,9 +235,10 @@
 	</section>
 
 	<section class="service mb_0">
+		<h1 class="visibility-xs hidden-sm hidden-md hidden-lg">БЮДЖЕТНЫЕ ПОЕЗДКИ <br/> С ХОРОШИМ ЛЕЧЕНИЕМ</h1>
 		<div class="service_img right_part" style="background-image: url(img/masag.jpg);"></div>
 		<div class="service_text left_part" >
-			<h1>АЮРВЕДИЧЕСКИЕ ОТЕЛИ<br/> ШРИ ЛАНКИ</h1>
+			
 			<span class="service_text_line"></span>
 			<p> Nullam sit amet tortor accumsan, fermentum sem vitae, eleifend arcu. Donec tincidunt, metus ac vestibulum maximus, nisl enim vestibulum leo, nec tincidunt enim libero in sem. Praesent mollis sapien quis nisi auctor, vitae hendrerit mauris dictum. Aliquam semper nulla  quam, id tincidunt nulla dapibus non. Mauris iaculis lectus vel magna porta consequat vel quis odio. Suspendisse maximus elit tortor, et mollis sem lobortis in. Proin orci eros, congue vel nisl ac, rhoncus imperdiet nisl. Pellentesque feugiat mi ac nulla volutpat, id suscipit ligula suscipit. Suspendisse quis </p>
 
@@ -194,20 +253,20 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-5">
 					<div class="footer_logo">
 						<img src="img/footer_logo.png" alt="">
 					</div>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-7">
 					<div class="footer_social">
 						<p>Подпишитесь на нас <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></p>
 						<a href="#">irinagurjeva@top-ayurveda.com</a>
 					</div>
 					
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-5 col-sm-12">
 					<ul class="footer_contact">
 						<li>7 a Chornovola Str/M. Arnautska Str </li>
 						<li>Odessa, Ukraine</li>
@@ -230,21 +289,9 @@
 		</div>
 	</footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="js/common.js"></script>

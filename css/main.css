@@ -453,6 +453,33 @@ header .header_lang li a:hover, header .header_lang li a.current {
   display: inline-block;
 }
 
+.hotels .mobile_item_slider {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.hotels .mobile_item_slider .owl-prev {
+  position: absolute;
+  left: 15px;
+  top: 100px;
+  font-size: 24px;
+  color: #f3337c;
+}
+
+.hotels .mobile_item_slider .owl-next {
+  position: absolute;
+  right: 15px;
+  top: 100px;
+  font-size: 24px;
+  color: #f3337c;
+}
+
+.hotels .mobile_item_slider .hotel_item {
+  width: 260px;
+  display: table;
+  margin: 0px auto;
+}
+
 .hotels .hotel_item {
   width: 100%;
   margin-bottom: 100px;
