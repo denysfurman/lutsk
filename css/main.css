@@ -187,12 +187,15 @@ header {
 
 header .header_logo {
   display: inline-block;
-  margin-left: -30px;
+  margin-left: 64px;
+  margin-right: 64px;
   margin-top: 8px;
+  float: left;
 }
 
 header .header_contact {
-  display: inline;
+  display: inline-block;
+  float: left;
 }
 
 header .header_contact a {
@@ -206,6 +209,57 @@ header .header_contact a {
 
 header .header_contact a.email {
   font-size: 12px;
+}
+
+header .header_menu {
+  display: inline-block;
+  float: left;
+  margin-top: 37px;
+}
+
+header .header_menu li {
+  display: inline-block;
+  float: left;
+  margin-right: 70px;
+}
+
+header .header_menu li a {
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+header .header_menu li a:hover, header .header_menu li a.current {
+  color: #f3337c;
+}
+
+header .header_lang {
+  display: inline-block;
+  float: right;
+  margin-top: 25px;
+}
+
+header .header_lang li {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+header .header_lang li a {
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+header .header_lang li a:hover, header .header_lang li a.current {
+  color: #f3337c;
+}
+
+.header_menu_wr {
+  display: inline-block;
+  float: right;
+  width: 325px;
+  margin-right: 20px;
 }
 
 .main_text {
@@ -431,16 +485,17 @@ footer {
   width: 100%;
   background-color: #fcd2d2;
   position: relative;
-  min-height: 360px;
   margin-top: 60px;
-  padding: 50px 0;
+  padding: 50px 0 0;
 }
 
 footer .footer_logo {
   margin-top: 30px;
+  margin-left: 38px;
 }
 
 footer .footer_social {
+  letter-spacing: 1px;
   margin-top: 60px;
 }
 
@@ -465,4 +520,40 @@ footer .footer_social p a:hover {
 footer .footer_social a {
   font-size: 18px;
   color: #000;
+}
+
+.footer_contact {
+  display: inline-block;
+  width: 350px;
+}
+
+.footer_contact li {
+  line-height: 59px;
+  border-bottom: 2px solid #fff;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  letter-spacing: 0.5px;
+}
+
+.footer_contact li:last-child {
+  border: none;
+}
+
+.footer_bottom_line {
+  display: inline-block;
+  width: 100%;
+  border-top: 2px solid #fff;
+  margin-top: 40px;
+  padding: 15px 0;
+}
+
+.footer_bottom_line p {
+  margin: 0;
+  float: right;
+  font-size: 15px;
+}
+
+.footer_bottom_line p a {
+  color: #f3337c;
 }

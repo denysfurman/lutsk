@@ -1,11 +1,22 @@
 $(function() {
-   
+   	
+   	// loader
+	$(document).ready(function() {
+	  setTimeout(function() {
+	    $('body').addClass('loaded');
+	    
+	  }, 1000);
 
 
-	
+	});
+
+	// animated
+
 	$('.service_img.left_part').animated('bounceInLeft' , 'bounceInLeft' );
 	$('.service_img.right_part').animated('bounceInRight' , 'bounceInRight' );
 	$('.service_text h1').animated('zoomIn' , 'zoomIn' );
+	
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {

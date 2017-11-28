@@ -181,6 +181,8 @@ h1
 .mb_0 
   margin-bottom: 0!important
 
+
+
 // ----------------------------------------- header -----------------------------------------
 
 
@@ -191,10 +193,13 @@ header
   min-height: 100px
   .header_logo
     display: inline-block
-    margin-left: -30px
+    margin-left: 64px
+    margin-right: 64px
     margin-top: 8px
+    float: left
   .header_contact
-    display: inline
+    display: inline-block
+    float: left
     a
       display: block
       color: #000
@@ -204,7 +209,42 @@ header
       margin-left: 20px
       &.email
         font-size: 12px
+  .header_menu
+    display: inline-block
+    float: left
+    margin-top: 37px
+    li 
+      display: inline-block
+      float: left
+      margin-right: 70px
+      a  
+        font-size: 14px
+        color: #000
+        letter-spacing: 1px
+        &:hover, &.current
+          color: #f3337c     
 
+  .header_lang
+    display: inline-block
+    float: right
+    margin-top: 25px
+    li 
+      display: inline-block
+      width: 100%
+      margin-bottom: 15px
+      a  
+        font-size: 14px
+        color: #000
+        letter-spacing: 1px
+        &:hover, &.current
+          color: #f3337c             
+
+
+.header_menu_wr
+  display: inline-block
+  float: right
+  width: 325px
+  margin-right: 20px
 
 .main_text
   width: 100%
@@ -387,12 +427,15 @@ footer
   width: 100%
   background-color: #fcd2d2
   position: relative
-  min-height: 360px
+  
   margin-top: 60px
-  padding: 50px 0
+  padding: 50px 0 0
   .footer_logo
     margin-top: 30px
+    margin-left: 38px
+
   .footer_social
+    letter-spacing: 1px
     margin-top: 60px
     p
       margin: 0
@@ -408,4 +451,31 @@ footer
           color:  #337ab7;
     a 
       font-size: 18px
-      color: #000   
+      color: #000  
+
+
+.footer_contact
+  display: inline-block
+  width: 350px
+  li
+    line-height: 59px
+    border-bottom: 2px solid #fff
+    font-size: 18px
+    width: 100%
+    display: block
+    letter-spacing: 0.5px
+    &:last-child
+      border: none
+
+.footer_bottom_line
+  display: inline-block
+  width: 100%
+  border-top: 2px solid #fff
+  margin-top: 40px
+  padding: 15px 0
+  p
+    margin: 0
+    float: right
+    font-size: 15px
+    a
+      color: #f3337c
