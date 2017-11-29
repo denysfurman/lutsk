@@ -1,27 +1,26 @@
 
-// loader
-	$(document).ready(function() {
-	  setTimeout(function() {
-	    $('body').addClass('loaded');
-	    
-	  }, 1000);
-
-
-	});
 
 $(function() {
    	
-   	
+   	$('.service .butt').on('click',function(){
+		 
+    	
+	   	$(this).toggleClass("active");
+	   	$(this).parents(".service").find(".hotels").toggleClass("active");
+	
+		
+
+	});
 
 	// animated
 
-	$('.service_img.left_part').animated('bounceInLeft' , 'bounceInLeft' );
-	$('.service_img.right_part').animated('bounceInRight' , 'bounceInRight' );
-	$('.service_text h1').animated('zoomIn' , 'zoomIn' );
+	// $('.service_img.left_part').animated('bounceInLeft' , 'bounceInLeft' );
+	// $('.service_img.right_part').animated('bounceInRight' , 'bounceInRight' );
+	// $('.service_text h1').animated('zoomIn' , 'zoomIn' );
 	
 	//slider mobile
 		$('.mobile_item_slider').owlCarousel({
-		
+			items:1,
 		    loop:true,
 		    margin:0,
 		   	nav:true,
@@ -30,10 +29,25 @@ $(function() {
 		    navText:[
 	            "<i class='fa fa-angle-left fa-2x'></i>",
 	            "<i class='fa fa-angle-right fa-2x'></i>"
-	        ],
-	        items:1
+	        ]
+	        
 		  
 		});	
+
+
+
+		//slider mobile
+		$('.main_slider').owlCarousel({
+		
+		    loop:true,
+		    margin:0,
+		   	nav:false,
+			items:1,
+			autoplay:true,
+	    	autoplayTimeout:4000
+		  
+		});	
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {

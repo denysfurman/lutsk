@@ -35,68 +35,86 @@
 	<!--  header -->
 	
 	<header>
-		<div class="header_logo">
-			<a href="#"><img src="img/logo_header.png" alt=""></a>
+		<div class="container-fluid">
+			<div class="header_logo">
+				<a href="#"><img src="img/logo_header.png" alt=""></a>
+			</div>
+			<div class="menu-toggle">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="cross">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+			<div class="heade_mob_menu">
+				
+				<div class="header_menu_wr">
+					<ul class="header_menu">
+						<li><a href="#" class="current">ГЛАВНАЯ</a></li>
+						<li><a href="#">О НАС</a></li>
+					</ul>
+					<ul class="header_lang">
+						<li><a href="#" class="current">RUS</a></li>
+						<li><a href="#">ENG</a></li>
+					</ul>
+				</div>
+
+				<div class="header_contact">
+					<p class="visibility-xs hidden-sm hidden-md hidden-lg"> <b>Контакты</b></p>
+					<a href="#">+38 048 79438 60</a>
+					<a href="#">+38 050 764 93 23</a>
+					<a href="#" class="email">irinagurjeva@top-tour.com</a>
+				</div>
+			</div>
 		</div>
-		<div class="menu-toggle">
-			<div class="hamburger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<div class="cross">
-				<span></span>
-				<span></span>
-			</div>
-		</div>
 
-		<div class="heade_mob_menu">
-			
-			<div class="header_menu_wr">
-				<ul class="header_menu">
-					<li><a href="#" class="current">ГЛАВНАЯ</a></li>
-					<li><a href="#">О НАС</a></li>
-				</ul>
-				<ul class="header_lang">
-					<li><a href="#" class="current">RUS</a></li>
-					<li><a href="#">ENG</a></li>
-				</ul>
-			</div>
-
-			<div class="header_contact">
-				<p class="visibility-xs hidden-sm hidden-md hidden-lg"> <b>Контакты</b></p>
-				<a href="#">+38 048 79438 60</a>
-				<a href="#">+38 050 764 93 23</a>
-				<a href="#" class="email">irinagurjeva@top-tour.com</a>
-
-			</div>
-
-			
-		</div>
-
-	
-		
 	</header>
 	
-	<section class="main_text">
-		
-		<div class="main_text_img">
-			<img class="hidden-xs" src="img/top_ayurveda.png " alt="">
-			<img class="visibility-xs hidden-sm hidden-md hidden-lg" src="img/top_ayurveda_mob.png " alt="">
-		</div>
 
-		<img class="main_text_mangala hidden-xs" src="img/mandala.png" alt="" class="mangala">
-		<img class="main_text_mangala visibility-xs hidden-sm hidden-md hidden-lg" src="img/mandala_mob.png" alt="" class="mangala">
-				
+
+	<section>
+
+		<div class="main_slider">
+			<div class="item">
+				<div class="main_text">
+					<div class="main_text_img">
+						<img class="hidden-xs" src="img/top_ayurveda.png " alt="">
+						<img class="visibility-xs hidden-sm hidden-md hidden-lg" src="img/top_ayurveda_mob.png " alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="main_text">
+					<div class="main_text_img">
+						<img class="hidden-xs" src="img/top_ayurveda.png " alt="">
+						<img class="visibility-xs hidden-sm hidden-md hidden-lg" src="img/top_ayurveda_mob.png " alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<span class="mangala"><img src="img/mandala.png" alt=""></span>
+		<span class="mangala_mob"><img src="img/mandala_mob.png" alt=""></span>
 	</section>
 
+
+
+
 	<section class="about">
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-xs-12">
-					<h1>Lorem ipsum dolor sit amet</h1>
+					<div class="title">Lorem ipsum dolor sit amet </div>
 					<div class="about_text">
 						<p>Nullam sit amet tortor accumsan, fermentum sem vitae, eleifend arcu. Donec tincidunt, metus ac vestibulum maximus, nisl enim vestibulum leo, nec tincidunt enim libero in sem. Praesent mollis sapien quis nisi auctor, vitae hendrerit mauris dictum. Aliquam semper nulla quam, id tincidunt nulla dapibus non. Mauris iaculis lectus vel magna porta consequat vel quis odio. Suspendisse maximus elit tortor, et mollis sem lobortis in. Proin orci eros, congue vel nisl ac, rhoncus imperdiet nisl. Pellentesque feugiat mi ac nulla volutpat, id suscipit ligula suscipit. Suspendisse quis hendrerit ipsum, at vulputate libero. In dolor odio, tristique vel lectus vel, ultricies tincidunt velit. Pellentesque et orci ut dui pharetra feugiat</p>
+						<img class="about_text_left_img hidden-md hidden-sm hidden-xs" src="img/mint.png" alt="">
+						<img class="about_text_right_img hidden-md hidden-sm hidden-xs" src="img/bottle.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -104,149 +122,427 @@
 	</section>
 
 	<section class="service">
-		<h1 class="visibility-xs hidden-sm hidden-md hidden-lg">БЮДЖЕТНЫЕ ПОЕЗДКИ <br/> С ХОРОШИМ ЛЕЧЕНИЕМ</h1>
-		<div class="service_img left_part " style="background-image: url(img/masag.jpg);"></div>
-		<div class="service_text right_part">
-			<h1 class="">БЮДЖЕТНЫЕ ПОЕЗДКИ <br/> С ХОРОШИМ ЛЕЧЕНИЕМ</h1>
-			<span class="service_text_line"></span>
-			<p> Nullam sit amet tortor accumsan, fermentum sem vitae, eleifend arcu. Donec tincidunt, metus ac vestibulum maximus, nisl enim vestibulum leo, nec tincidunt enim libero in sem. Praesent mollis sapien quis nisi auctor, vitae hendrerit mauris dictum. Aliquam semper nulla  quam, id tincidunt nulla dapibus non. Mauris iaculis lectus vel magna porta consequat vel quis odio. Suspendisse maximus elit tortor, et mollis sem lobortis in. Proin orci eros, congue vel nisl ac, rhoncus imperdiet nisl. Pellentesque feugiat mi ac nulla volutpat, id suscipit ligula suscipit. Suspendisse quis </p>
-
-			<a href="#">ПОСМОТРЕТЬ</a>
-		</div>
-	</section>
-
-	<section class="hotels">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-4 col-sm-6 hidden-xs">
-					<div class="hotel_item">
-						<img src="img/small picture.jpg" alt="">
-						<p>НАЗВАНИЕ ОТЕЛЯ</p>
-						<a href="" class="button">ПОДРОБНЕЕ</a>
+				<div class="col-md-6">
+					<div class=" title  hidden-md hidden-lg">БЮДЖЕТНЫЕ ПОЕЗДКИ <br/> С ХОРОШИМ ЛЕЧЕНИЕМ</div>
+					<div class="service_img" style="background-image: url(img/masag.jpg);"></div>
+				</div>
+				<div class="col-md-6">
+					<div class="service_text right_part">
+						<div class="title">БЮДЖЕТНЫЕ ПОЕЗДКИ <br/> С ХОРОШИМ ЛЕЧЕНИЕМ</div>
+						<span class="service_text_line"></span>
+						<p> Nullam sit amet tortor accumsan, fermentum sem vitae, eleifend arcu. Donec tincidunt, metus ac vestibulum maximus, nisl enim vestibulum leo, nec tincidunt enim libero in sem. Praesent mollis sapien quis nisi auctor, vitae hendrerit mauris dictum. Aliquam semper nulla  quam, id tincidunt nulla dapibus non. Mauris iaculis lectus vel magna porta consequat vel quis odio. Suspendisse maximus elit tortor, et mollis sem lobortis in. Proin orci eros, congue vel nisl ac, rhoncus imperdiet nisl. Pellentesque feugiat mi ac nulla volutpat, id suscipit ligula suscipit. Suspendisse quis </p>
+
+						<span  class="butt right">ПОСМОТРЕТЬ</span>
 					</div>
 				</div>
-
-				<div class="col-md-4 col-sm-6 hidden-xs">
-					<div class="hotel_item">
-						<img src="img/small picture.jpg" alt="">
-						<p>НАЗВАНИЕ ОТЕЛЯ</p>
-						<a href="" class="button">ПОДРОБНЕЕ</a>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 hidden-xs">
-					<div class="hotel_item">
-						<img src="img/small picture.jpg" alt="">
-						<p>НАЗВАНИЕ ОТЕЛЯ</p>
-						<a href="" class="button">ПОДРОБНЕЕ</a>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 hidden-xs">
-					<div class="hotel_item">
-						<img src="img/small picture.jpg" alt="">
-						<p>НАЗВАНИЕ ОТЕЛЯ</p>
-						<a href="" class="button">ПОДРОБНЕЕ</a>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 hidden-xs">
-					<div class="hotel_item">
-						<img src="img/small picture.jpg" alt="">
-						<p>НАЗВАНИЕ ОТЕЛЯ</p>
-						<a href="" class="button">ПОДРОБНЕЕ</a>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 hidden-xs">
-					<div class="hotel_item">
-						<img src="img/small picture.jpg" alt="">
-						<p>НАЗВАНИЕ ОТЕЛЯ</p>
-						<a href="" class="button">ПОДРОБНЕЕ</a>
-					</div>
-				</div>
-				
-				<!-- MOBILE ITEN SLIDER  -->
-
-				<div class="col-xs-12 visibility-xs hidden-sm hidden-md hidden-lg">
-					<div class="mobile_item_slider">
-						<div class="item">
-							<div class="hotel_item">
-								<img src="img/small picture.jpg" alt="">
-								<p>НАЗВАНИЕ ОТЕЛЯ</p>
-								<a href="" class="button">ПОДРОБНЕЕ</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="hotel_item">
-								<img src="img/small picture.jpg" alt="">
-								<p>НАЗВАНИЕ ОТЕЛЯ</p>
-								<a href="" class="button">ПОДРОБНЕЕ</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="hotel_item">
-								<img src="img/small picture.jpg" alt="">
-								<p>НАЗВАНИЕ ОТЕЛЯ</p>
-								<a href="" class="button">ПОДРОБНЕЕ</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="hotel_item">
-								<img src="img/small picture.jpg" alt="">
-								<p>НАЗВАНИЕ ОТЕЛЯ</p>
-								<a href="" class="button">ПОДРОБНЕЕ</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
 			</div>
-		</div>
-	</section>
+			
+			
 
+			<div class="hotels">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 hidden-xs">
+							<div class="hotel_item">
+								<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+								<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 hidden-xs">
+							<div class="hotel_item">
+								<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+								<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 hidden-xs">
+							<div class="hotel_item">
+								<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+								<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 hidden-xs">
+							<div class="hotel_item">
+								<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+								<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 hidden-xs">
+							<div class="hotel_item">
+								<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+								<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 hidden-xs">
+							<div class="hotel_item">
+								<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+								<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+						
+						<!-- MOBILE ITEN SLIDER  -->
+
+						<div class="col-xs-12  hidden-sm hidden-md hidden-lg">
+							<div class="mobile_item_slider">
+								<div class="item">
+									<div class="hotel_item">
+										<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+										<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+										<a href="" class="button">ПОДРОБНЕЕ</a>
+									</div>
+								</div>
+								<div class="item">
+									<div class="hotel_item">
+										<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+										<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+										<a href="" class="button">ПОДРОБНЕЕ</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
 
 
 
 
 	<section class="service">
-		<h1 class="visibility-xs hidden-sm hidden-md hidden-lg">БЮДЖЕТНЫЕ ПОЕЗДКИ <br/> С ХОРОШИМ ЛЕЧЕНИЕМ</h1>
-		<div class="service_img right_part" style="background-image: url(img/masag.jpg);"></div>
-		<div class="service_text left_part" >
-			<h1>КОМФОРТАБЕЛЬНЫЕ<br/>КЛИНИКИ АЮРВЕДЫ</h1>
-			<span class="service_text_line"></span>
-			<p> Nullam sit amet tortor accumsan, fermentum sem vitae, eleifend arcu. Donec tincidunt, metus ac vestibulum maximus, nisl enim vestibulum leo, nec tincidunt enim libero in sem. Praesent mollis sapien quis nisi auctor, vitae hendrerit mauris dictum. Aliquam semper nulla  quam, id tincidunt nulla dapibus non. Mauris iaculis lectus vel magna porta consequat vel quis odio. Suspendisse maximus elit tortor, et mollis sem lobortis in. Proin orci eros, congue vel nisl ac, rhoncus imperdiet nisl. Pellentesque feugiat mi ac nulla volutpat, id suscipit ligula suscipit. Suspendisse quis </p>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-md-push-6">
+					<div class=" title  hidden-md hidden-lg">ПЛЯЖНЫЕ САНАТОРИИ У МОРЯ</div>
+					<div class="service_img right_part" style="background-image: url(img/masag.jpg);"></div>
+				</div>
+				<div class="col-md-6 col-md-pull-6">
+					<div class="service_text left_part">
+						<div class="title">ПЛЯЖНЫЕ САНАТОРИИ<br/>У МОРЯ</div>
+						<span class="service_text_line"></span>
+						<p> Nullam sit amet tortor accumsan, fermentum sem vitae, eleifend arcu. Donec tincidunt, metus ac vestibulum maximus, nisl enim vestibulum leo, nec tincidunt enim libero in sem. Praesent mollis sapien quis nisi auctor, vitae hendrerit mauris dictum. Aliquam semper nulla  quam, id tincidunt nulla dapibus non. Mauris iaculis lectus vel magna porta consequat vel quis odio. Suspendisse maximus elit tortor, et mollis sem lobortis in. Proin orci eros, congue vel nisl ac, rhoncus imperdiet nisl. Pellentesque feugiat mi ac nulla volutpat, id suscipit ligula suscipit. Suspendisse quis </p>
 
-			<a href="#">ПОСМОТРЕТЬ</a>
-		</div>
+						<span  class="butt">ПОСМОТРЕТЬ</span>
+					</div>
+				</div>
+			</div>
+		</div>	
+			
+			
+
+		<div class="hotels">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 hidden-xs">
+						<div class="hotel_item">
+							<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+							<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+							<a href="" class="button">ПОДРОБНЕЕ</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6 hidden-xs">
+						<div class="hotel_item">
+							<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+							<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+							<a href="" class="button">ПОДРОБНЕЕ</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6 hidden-xs">
+						<div class="hotel_item">
+							<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+							<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+							<a href="" class="button">ПОДРОБНЕЕ</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6 hidden-xs">
+						<div class="hotel_item">
+							<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+							<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+							<a href="" class="button">ПОДРОБНЕЕ</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6 hidden-xs">
+						<div class="hotel_item">
+							<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+							<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+							<a href="" class="button">ПОДРОБНЕЕ</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6 hidden-xs">
+						<div class="hotel_item">
+							<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+							<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+							<a href="" class="button">ПОДРОБНЕЕ</a>
+						</div>
+					</div>
+					
+					<!-- MOBILE ITEN SLIDER  -->
+
+					<div class="col-xs-12  hidden-sm hidden-md hidden-lg">
+						<div class="mobile_item_slider">
+							<div class="item">
+								<div class="hotel_item">
+									<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+									<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+									<a href="" class="button">ПОДРОБНЕЕ</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="hotel_item">
+									<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+									<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+									<a href="" class="button">ПОДРОБНЕЕ</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+			
+		</div>	
 	</section>
+
+
+	
 
 	<section class="service">
-		<h1 class="visibility-xs hidden-sm hidden-md hidden-lg">БЮДЖЕТНЫЕ ПОЕЗДКИ <br/> С ХОРОШИМ ЛЕЧЕНИЕМ</h1>
-		<div class="service_img left_part" style="background-image: url(img/masag.jpg);"></div>
-		<div class="service_text right_part">
-			<h1>КОМФОРТАБЕЛЬНЫЕ<br/>КЛИНИКИ АЮРВЕДЫ</h1>
-			<span class="service_text_line"></span>
-			<p> Nullam sit amet tortor accumsan, fermentum sem vitae, eleifend arcu. Donec tincidunt, metus ac vestibulum maximus, nisl enim vestibulum leo, nec tincidunt enim libero in sem. Praesent mollis sapien quis nisi auctor, vitae hendrerit mauris dictum. Aliquam semper nulla  quam, id tincidunt nulla dapibus non. Mauris iaculis lectus vel magna porta consequat vel quis odio. Suspendisse maximus elit tortor, et mollis sem lobortis in. Proin orci eros, congue vel nisl ac, rhoncus imperdiet nisl. Pellentesque feugiat mi ac nulla volutpat, id suscipit ligula suscipit. Suspendisse quis </p>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<div class=" title  hidden-md hidden-lg">КОМФОРТАБЕЛЬНЫЕ КЛИНИКИ АЮРВЕДЫ</div>
+					<div class="service_img" style="background-image: url(img/masag.jpg);"></div>
+				</div>
+				<div class="col-md-6">
+					<div class="service_text right_part">
+						<div class="title">КОМФОРТАБЕЛЬНЫЕ<br/>КЛИНИКИ АЮРВЕДЫ</div>
+						<span class="service_text_line"></span>
+						<p> Nullam sit amet tortor accumsan, fermentum sem vitae, eleifend arcu. Donec tincidunt, metus ac vestibulum maximus, nisl enim vestibulum leo, nec tincidunt enim libero in sem. Praesent mollis sapien quis nisi auctor, vitae hendrerit mauris dictum. Aliquam semper nulla  quam, id tincidunt nulla dapibus non. Mauris iaculis lectus vel magna porta consequat vel quis odio. Suspendisse maximus elit tortor, et mollis sem lobortis in. Proin orci eros, congue vel nisl ac, rhoncus imperdiet nisl. Pellentesque feugiat mi ac nulla volutpat, id suscipit ligula suscipit. Suspendisse quis </p>
 
-			<a href="#">ПОСМОТРЕТЬ</a>
+						<span  class="butt right">ПОСМОТРЕТЬ</span>
+					</div>
+				</div>
+			</div>
+			
+			
+
+			<div class="hotels">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 hidden-xs">
+							<div class="hotel_item">
+								<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+								<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 hidden-xs">
+							<div class="hotel_item">
+								<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+								<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 hidden-xs">
+							<div class="hotel_item">
+								<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+								<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 hidden-xs">
+							<div class="hotel_item">
+								<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+								<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 hidden-xs">
+							<div class="hotel_item">
+								<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+								<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 hidden-xs">
+							<div class="hotel_item">
+								<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+								<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+								<a href="" class="button">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+						
+						<!-- MOBILE ITEN SLIDER  -->
+
+						<div class="col-xs-12  hidden-sm hidden-md hidden-lg">
+							<div class="mobile_item_slider">
+								<div class="item">
+									<div class="hotel_item">
+										<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+										<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+										<a href="" class="button">ПОДРОБНЕЕ</a>
+									</div>
+								</div>
+								<div class="item">
+									<div class="hotel_item">
+										<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+										<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+										<a href="" class="button">ПОДРОБНЕЕ</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+
+
+
+
+	<section class="service">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-md-push-6">
+					<div class=" title  hidden-md hidden-lg">АЮРВЕДИЧЕСКИЕ ОТЕЛИ ШРИ ЛАНКИ</div>
+					<div class="service_img right_part" style="background-image: url(img/masag.jpg);"></div>
+				</div>
+				<div class="col-md-6 col-md-pull-6">
+					<div class="service_text left_part">
+						<div class="title">АЮРВЕДИЧЕСКИЕ ОТЕЛИ<br/>ШРИ ЛАНКИ</div>
+						<span class="service_text_line"></span>
+						<p> Nullam sit amet tortor accumsan, fermentum sem vitae, eleifend arcu. Donec tincidunt, metus ac vestibulum maximus, nisl enim vestibulum leo, nec tincidunt enim libero in sem. Praesent mollis sapien quis nisi auctor, vitae hendrerit mauris dictum. Aliquam semper nulla  quam, id tincidunt nulla dapibus non. Mauris iaculis lectus vel magna porta consequat vel quis odio. Suspendisse maximus elit tortor, et mollis sem lobortis in. Proin orci eros, congue vel nisl ac, rhoncus imperdiet nisl. Pellentesque feugiat mi ac nulla volutpat, id suscipit ligula suscipit. Suspendisse quis </p>
+
+						<span  class="butt">ПОСМОТРЕТЬ</span>
+					</div>
+				</div>
+			</div>
+		</div>	
+			
+			
+
+		<div class="hotels">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 hidden-xs">
+						<div class="hotel_item">
+							<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+							<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+							<a href="" class="button">ПОДРОБНЕЕ</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6 hidden-xs">
+						<div class="hotel_item">
+							<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+							<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+							<a href="" class="button">ПОДРОБНЕЕ</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6 hidden-xs">
+						<div class="hotel_item">
+							<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+							<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+							<a href="" class="button">ПОДРОБНЕЕ</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6 hidden-xs">
+						<div class="hotel_item">
+							<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+							<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+							<a href="" class="button">ПОДРОБНЕЕ</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6 hidden-xs">
+						<div class="hotel_item">
+							<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+							<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+							<a href="" class="button">ПОДРОБНЕЕ</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6 hidden-xs">
+						<div class="hotel_item">
+							<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+							<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+							<a href="" class="button">ПОДРОБНЕЕ</a>
+						</div>
+					</div>
+					
+					<!-- MOBILE ITEN SLIDER  -->
+
+					<div class="col-xs-12  hidden-sm hidden-md hidden-lg">
+						<div class="mobile_item_slider">
+							<div class="item">
+								<div class="hotel_item">
+									<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+									<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+									<a href="" class="button">ПОДРОБНЕЕ</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="hotel_item">
+									<img class="hotel_item_img" src="img/small picture.jpg" alt="">
+									<p class="name">НАЗВАНИЕ ОТЕЛЯ</p>
+									<a href="" class="button">ПОДРОБНЕЕ</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+			
+		</div>	
+
+		<div class="container-fluid">
+			<img src="img/candle.png" alt="" class="service_candle">
 		</div>
 	</section>
 
-	<section class="service mb_0">
-		<h1 class="visibility-xs hidden-sm hidden-md hidden-lg">БЮДЖЕТНЫЕ ПОЕЗДКИ <br/> С ХОРОШИМ ЛЕЧЕНИЕМ</h1>
-		<div class="service_img right_part" style="background-image: url(img/masag.jpg);"></div>
-		<div class="service_text left_part" >
-			<h1>КОМФОРТАБЕЛЬНЫЕ<br/>КЛИНИКИ АЮРВЕДЫ</h1>
-			<span class="service_text_line"></span>
-			<p> Nullam sit amet tortor accumsan, fermentum sem vitae, eleifend arcu. Donec tincidunt, metus ac vestibulum maximus, nisl enim vestibulum leo, nec tincidunt enim libero in sem. Praesent mollis sapien quis nisi auctor, vitae hendrerit mauris dictum. Aliquam semper nulla  quam, id tincidunt nulla dapibus non. Mauris iaculis lectus vel magna porta consequat vel quis odio. Suspendisse maximus elit tortor, et mollis sem lobortis in. Proin orci eros, congue vel nisl ac, rhoncus imperdiet nisl. Pellentesque feugiat mi ac nulla volutpat, id suscipit ligula suscipit. Suspendisse quis </p>
+	
 
-			<a href="#">ПОСМОТРЕТЬ</a>
-		</div>
 
-		<img class="service_candle" src="img/candle.png" alt="">
-	</section>
+
+
+
+	
 
 
 
@@ -267,12 +563,12 @@
 					
 				</div>
 				<div class="col-md-5 col-sm-12">
-					<ul class="footer_contact">
-						<li>7 a Chornovola Str/M. Arnautska Str </li>
-						<li>Odessa, Ukraine</li>
-						<li>+38 048 794 38 60</li>
-						<li>+38 050 764 93 23</li>
-					</ul>
+					<div class="footer_contact">
+						<div>7 a Chornovola Str/M. Arnautska Str </div>
+						<div>Odessa, Ukraine</div>
+						<div> <a href="#">+38 048 794 38 60 </a> </div>
+						<div> <a href="#">+38 050 764 93 23 </a> </div>
+					</div>
 				</div>
 
 			</div>
@@ -291,7 +587,6 @@
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
-	
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="js/common.js"></script>

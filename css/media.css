@@ -2,7 +2,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1355px) {
-	.service .service_text h1 {
+	.service .service_text .title {
 	    line-height: 39px;
 	    
 	    margin-bottom: 100px;
@@ -13,7 +13,7 @@
    
     	width: 100%;
 	}
-	.service .service_text h1 {
+	.service .service_text .title {
 	    line-height: 31px;
 	    margin-bottom: 70px;
 	    font-size: 27px;
@@ -22,7 +22,7 @@
 	.about {
   
 	    height: auto;
-	    background-image: url(../img/gradient.png);
+	   
 	    background-size: cover;
 	    background-repeat: no-repeat;
 	    padding-top: 150px;
@@ -33,6 +33,9 @@
 	    margin-top: 30px;
 	    margin-left: 0;
 	}
+	.container-fluid .container{
+		padding: 0;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -42,6 +45,23 @@
 	    margin: 83px auto 0;
 	    width: 700px;
 	    display: table;
+	}
+	.container{
+		width: 100%;
+	}
+	.mangala{
+		display: none;
+	}
+	.mangala_mob{
+		position: absolute;
+		display: inline-block;
+		left: calc( 50% - 166px );
+    	bottom: 0;
+    	z-index: 1;
+	}
+	footer .footer_social a {
+	    font-size: 16px;
+	    color: #000;
 	}
 }
 
@@ -71,18 +91,18 @@
     .service .service_text {
 	    width: 100%;
 	    display: inline-block;
-	    padding-right: 30px;
+	    padding-right: 15px;
 	    position: relative;
 	    text-align: left;
 	    margin: 0!important;
-	    padding-left: 30px;
+	    padding-left: 15px;
 	}
-	.service .service_text > h1{
+	.service .service_text > .title{
 		display: none;
 	}
 	.service .service_text.left_part {
-	    padding-right: 30px;
-	    padding-left: 30px;
+	    padding-right: 15px;
+	    padding-left: 15px;
 	}
 	.service .service_candle {
 	    margin-top: 61px;
@@ -105,6 +125,18 @@
 	.hotels {
 	    
 	    margin-top: 59px;
+	}
+	.service .title {
+    	font-size: 36px;
+	    letter-spacing: 4px;
+	    text-transform: uppercase;
+	    margin-top: 0;
+	    text-align: center;
+	    margin-bottom: 50px;
+	}
+	.service .service_candle {
+	  
+	    margin-left: -15px;
 	}
 
 }
@@ -169,6 +201,7 @@
 	.main_text .main_text_img img {
 	    display: table;
 	    margin: 130px auto 0;
+	    width: auto;
 	}
 	.footer_contact {
 	    display: table;
@@ -177,7 +210,7 @@
 	    margin-top: 53px;
 	    text-align: center;
 	}
-	.footer_contact li{
+	.footer_contact div{
 		font-size: 13px;
 		line-height: 40px;
 	}
@@ -205,21 +238,13 @@
 	    margin-top: 0px;
 	}
 	.service .service_img {
-    
-    	height: 200px;
+	    height: 200px;
+	    margin-left: -15px;
+	    width: calc(100% + 30px);
 	}
 	
-	.service .service_text a:after {
-	    content: "";
-	    display: inline-block;
-	    width: 18px;
-	    height: 23px;
-	    left: 32px;
-	    bottom: -32px;
-	    position: absolute;
-	    background-image: url(../img/arrow_mob.png);
-	}
-	.service .service_text a {
+	
+	.service .service_text span.butt {
 	    color: #f3337c;
 	    font-size: 13px;
 	    position: relative;
@@ -228,16 +253,33 @@
 	    display: table;
 	    float: none!important;
 	}
-	.service .service_text.right_part a:after {
+	.service .service_text span.butt:after {
     	content: "";
-	    display: inline-block;
-	    width: 18px;
-	    height: 23px;
-	    left: 32px;
-	    bottom: -32px;
-	    position: absolute;
-	    background-image: url(../img/arrow_mob.png);
+	    display: inline-block!important;
+	    width: 18px!important;
+	    height: 23px!important;
+	    left: 32px!important;
+	    bottom: -32px!important;
+	    position: absolute!important;
+	    background-image: url(../img/arrow_mob.png)!important;
+	    -webkit-transform: rotate(0deg)!important;
+	    -ms-transform: rotate(0deg)!important;
+	    transform: rotate(0deg)!important;
 	}
+	.service .service_text span.butt.active:after {
+    	
+	    -webkit-transform: rotate(180deg)!important;
+	    -ms-transform: rotate(180deg)!important;
+	    transform: rotate(180deg)!important;
+	}
+
+	.service .service_text span.butt.right::after {
+	   
+	    -webkit-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	}
+
 	footer {
    
 	    padding: 30px 0 0;
@@ -291,6 +333,7 @@
 	    z-index: 100;
 	    background-color: blanchedalmond;
 	    top: 70px;
+	    left: 0;
 	}
 	.header_menu_wr {
 	    width: auto;
@@ -476,6 +519,24 @@
 	    letter-spacing: 1px;
 	    text-align: justify;
 	}
+	.about:after {
+    	
+    	top: calc(50% - 80px);
+   		 height: 160px;
+	}
+	.about .title {
+	    text-align: center;
+	    font-size: 22px;
+	}
+	.service .title {
+    	font-size: 22px;
+	    letter-spacing: 4px;
+	    text-transform: uppercase;
+	    margin-top: 0;
+	    text-align: center;
+	    margin-bottom: 50px;
+	}
+	
 
 
 
@@ -491,11 +552,21 @@
 @media only screen and (max-width : 360px) {
 	.hotels .mobile_item_slider .owl-next {
 	    position: absolute;
-	    right: -10px;
+	    right: -2px;
 	}
 	.hotels .mobile_item_slider .owl-prev {
     	position: absolute;
-    	left: -10px;
+    	left: -2px;
+	}
+	.service .service_candle {
+	    margin-top: 61px;
+	   
+	    width: 100%;
+	}
+	.hotels .hotel_item img {
+	    width: 230px;
+	   	height: auto;
+	    margin: 0 auto;
 	}
 }
 
@@ -523,6 +594,11 @@
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
+@media only screen and (min-width : 1600px) {
+.about:after {
+    
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+	}
 }

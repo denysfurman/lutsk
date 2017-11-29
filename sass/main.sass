@@ -23,8 +23,7 @@ body
 
 
 
-html
-  background-color: #fff
+
 
 body
   font-family: sans-serif
@@ -35,11 +34,14 @@ body
   font-family: "ComfortaaBold";
   overflow-x: hidden
   background-color: #fffcf4
- 
-  margin: 0 auto
   color: #000
+  
+.container-fluid
   max-width: 1366px
-  font-variant: small-caps
+ 
+  width: 100%
+
+
   
 
 .hidden
@@ -64,12 +66,10 @@ a
     transition: all 0.2s ease
     outline: none
 
-
-
-
-
-
-
+.hotels.active a
+  -moz-transition: all 0s ease!important
+  -webkit-transition: all 0s ease!important
+  transition: all 0s ease!important
 
 
 
@@ -148,7 +148,7 @@ textarea
     background: #f3f4f7
 
 
-h1
+h1,.title
   font-size: 36px
   letter-spacing: 5px
   text-transform: uppercase
@@ -238,7 +238,7 @@ header
         letter-spacing: 1px
         &:hover, &.current
           color: #f3337c             
-
+ 
 
 .header_menu_wr
   display: inline-block
@@ -249,37 +249,78 @@ header
 .main_text
   width: 100%
   display: inline-block
-  height: 665px
+  height: calc(100vh - 100px)
+  max-height: 1200px
+  
   background-image: url("../img/main_bg.jpg")
   background-size: cover
   background-repeat: no-repeat
-  .main_text_img
-    width: 100%
-    display: inline-block
-    img
-      display: table
-      margin: 180px auto 0
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-direction: row
+  -ms-flex-direction: row
+  flex-direction: row
+  -webkit-flex-wrap: nowrap
+  -ms-flex-wrap: nowrap
+  flex-wrap: nowrap
+  -webkit-justify-content: center
+  -ms-flex-pack: center
+  justify-content: center
+  -webkit-align-content: center
+  -ms-flex-line-pack: center
+  align-content: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+  
+    
   .main_text_mangala  
     display: table
     margin: -7px auto 0  
 
+.mangala
+  
+  position: absolute
+  z-index: 1
+  bottom: -911px
+  left: calc(50% - 550px)
+  opacity: 0.3
 
+.mangala_mob
+  display: none  
 .about
   width: 100%
   display: inline-block
   height: 772px
-  background-image: url("../img/about_bg.png")
-  background-size: cover
-  background-repeat: no-repeat
-  padding-top: 200px
+  position: relative
+  overflow:  hidden
+ 
+  
+  padding-top: 230px
+  background-position: center
   margin-top: -2px
-  h1
-    text-align: center
+  &:after 
+    content: ""
+    top: calc(50% - 115px)
+    height: 200px
+    left: -100px
+    right: -100px
+    width: calc(100% + 200px)
+    display: block
+    transform: rotate(20deg)
+    position: absolute
+    z-index: -1
+
+    background-image: linear-gradient(to right, #f0b5b5 0%, #b9e2b6 100%)
+  
   .about_text
     display: inline-block
     width: 540px
     display: table
     margin: 60px auto 0 
+    position: relative
+    z-index: 10
 
     p
       font-size: 15px
@@ -289,6 +330,22 @@ header
       font-variant: small-caps
       letter-spacing: 1.3px
       text-align: justify
+    .about_text_left_img
+      position: absolute
+      z-index: 2
+      left: -318px;
+      top: 9px;
+    .about_text_right_img
+      position: absolute
+      z-index: 2  
+      right: -363px
+      top: -221px  
+  .title
+    text-align: center  
+    position: relative
+    z-index: 10
+
+
 
 
 
@@ -297,19 +354,23 @@ header
   display: inline-block
   margin-top: 60px
   margin-bottom: 80px
+  position: relative
+  z-index: 11
   .service_img
-    width: calc(50% - 20px)
     display: inline-block
-    
+    width: 100%
     height: 415px
     position: relative
     background-size: cover
     background-repeat: no-repeat
+    background-position: center
     margin-bottom: 50px
+
     &:after
       content: ""
       display: inline-block
-      width: 573px
+      max-width: 573px
+      width: 100%
       height: 13px
       background-color: #b9e2b6
       bottom: -28px
@@ -324,49 +385,40 @@ header
 
 
       
-  .left_part
-    margin-right: 20px 
-    float: left 
-  .right_part
-    margin-left: 20px  
-    float: right
+  
   .service_text  
-    width: calc(50% - 20px)
+   
     display: inline-block
     padding-right: 112px
     position: relative
     text-align: left
-    &.right_part
-      a
-        float: right
-        &:after
-          width: 143px;
-          height: 36px;
-          bottom: -24px;
-          left: -48px;
-          background-image: url("../img/arrow-02.png")
+    padding-left: 10px
     &.left_part
-      
-      padding-right: 0
-      padding-left: 112px 
-      h1
+      padding-right: 10px
+      padding-left: 112px
+      .title
         text-align: right
-        
         &:after
-         
+          
+
           bottom: -40px
           right: inherit
           left: -112px
-          position: absolute      
-    h1
+       
+    .title
       line-height: 48px
       margin-top: -9px
       position: relative
       margin-bottom: 110px
+      font-size: 36px
+      font-size: 36px
+      letter-spacing: 4px
+      text-transform: uppercase
       &:after
         content: ""
         display: inline-block
-        width: 477px
+        max-width: 477px
+        width: 100%
         height: 20px
         background-color: #f0b5b5
         bottom: -40px
@@ -380,12 +432,21 @@ header
       font-variant: small-caps
       
       text-align: justify   
-    a
+    span.butt
       color: #f3337c
       font-size: 13px
       position: relative
       margin-top: 55px
       display: block
+      cursor: pointer
+      &.right
+        float: right
+        &::after 
+         
+          left: -50px;
+         
+          transform: rotate(180deg);
+
       &:hover
         color: #111
       &:after
@@ -401,6 +462,17 @@ header
 .hotels
   width: 100%
   display: inline-block
+  margin-top: 60px
+  overflow: hidden;
+  height: 0;
+  visibility: hidden;
+  &.active
+    display: inline-block
+    width: 100%
+    visibility: visible
+    height: auto
+
+
   .mobile_item_slider
     width: 100%
     margin-top: 50px
@@ -429,7 +501,7 @@ header
       width: 100%
       height: 230px
       object-fit: cover
-    p 
+    p.name 
       font-size: 18px
       margin: 0
       margin-top: 44px;
@@ -478,7 +550,7 @@ footer
 .footer_contact
   display: inline-block
   width: 350px
-  li
+  div
     line-height: 59px
     border-bottom: 2px solid #fff
     font-size: 18px
@@ -487,6 +559,8 @@ footer
     letter-spacing: 0.5px
     &:last-child
       border: none
+    a 
+      color: #000 
 
 .footer_bottom_line
   display: inline-block
@@ -502,3 +576,5 @@ footer
       color: #f3337c
 
   
+section
+  position: relative
