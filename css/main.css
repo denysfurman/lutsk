@@ -557,19 +557,17 @@ header .header_lang li a:hover, header .header_lang li a.current {
   margin: 0px auto;
 }
 
-.hotels .hotel_item {
+.hotel_item {
   width: 100%;
   margin-bottom: 100px;
 }
 
-.hotels .hotel_item img {
+.hotel_item img {
   width: 100%;
-  height: 230px;
-  -o-object-fit: cover;
-  object-fit: cover;
+  height: auto;
 }
 
-.hotels .hotel_item p.name {
+.hotel_item p.name {
   font-size: 18px;
   margin: 0;
   margin-top: 44px;
