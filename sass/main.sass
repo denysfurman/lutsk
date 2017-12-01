@@ -168,12 +168,15 @@ header
   background-color: #fcd2d2
   position: relative
   min-height: 100px
+  z-index: 10
   .header_logo
     display: inline-block
     margin-left: 64px
     margin-right: 64px
     margin-top: 8px
     float: left
+    img
+      width: 88px
   .header_contact
     display: inline-block
     float: left
@@ -228,6 +231,7 @@ header
   display: inline-block
   height: calc(100vh - 100px)
   max-height: 1200px
+  min-height: 500px
   
   background-image: url("../img/main_bg.jpg")
   background-size: cover

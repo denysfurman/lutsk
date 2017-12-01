@@ -68,15 +68,15 @@
 		width: 100%;
 	}
 	.mangala{
-		display: none;
+		left: calc(50% - 380px );
+		bottom: -564px;
 	}
-	.mangala_mob{
-		position: absolute;
-		display: inline-block;
-		left: calc( 50% - 166px );
-    	bottom: 0;
-    	z-index: 1;
+	.mangala img{
+		width: 760px;
+		display: table;
+		margin: 0 auto;
 	}
+	
 	footer .footer_social a {
 	    font-size: 16px;
 	    color: #000;
@@ -253,7 +253,19 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
-	
+	.mangala img{
+		width: 322px;
+	}
+	.mangala{
+		width: 322px;
+		position: absolute;
+		display: inline-block;
+		left: calc( 50% - 166px );
+    	bottom: -200px;
+    	z-index: 1;
+	}
+
+
 	/*Disable Animation on Mobile Devices*/
 	.animated {
 		/*CSS transitions*/
@@ -310,8 +322,8 @@
 	}
 	.main_text .main_text_img img {
 	    display: table;
-	    margin: 130px auto 0;
-	    width: auto;
+	    margin: 0px auto 0;
+	    width: 70%;
 	}
 	.footer_contact {
 	    display: table;
@@ -331,7 +343,7 @@
 	    min-height: 70px;
 	}
 	.header_logo img{
-		width: 57px;
+		width: 57px!important;
 	}
 	.hotels .hotel_item p {
 	    font-size: 18px;
@@ -395,7 +407,7 @@
 	    padding: 30px 0 0;
 	}
 	.footer_logo img{
-		width: 80px;
+		width: 150px;
 		height: auto;
 		display: table;
 		margin: 0 auto;
@@ -498,7 +510,7 @@
 
 	.hamburger span {
 	  display: block;
-	  width: 25px;
+	  width: 24px;
 	  height: 3px;
 	  margin-bottom: 3px;
 	  overflow: hidden;
@@ -728,6 +740,13 @@
 	}
 	.thumb_slider {
 	    margin-top: 50px;
+	}
+	.main_text{
+		min-height: 300px;
+	}
+	.service .service_text span.butt{
+		position: relative;
+		z-index: 11;
 	}
 
 

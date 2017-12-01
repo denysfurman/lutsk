@@ -170,6 +170,7 @@ header {
   background-color: #fcd2d2;
   position: relative;
   min-height: 100px;
+  z-index: 10;
 }
 
 header .header_logo {
@@ -178,6 +179,10 @@ header .header_logo {
   margin-right: 64px;
   margin-top: 8px;
   float: left;
+}
+
+header .header_logo img {
+  width: 88px;
 }
 
 header .header_contact {
@@ -254,6 +259,7 @@ header .header_lang li a:hover, header .header_lang li a.current {
   display: inline-block;
   height: calc(100vh - 100px);
   max-height: 1200px;
+  min-height: 500px;
   background-image: url("../img/main_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
