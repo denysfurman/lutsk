@@ -167,7 +167,7 @@ $(function() {
 
 	$('.menu-toggle').on('click',function(){
 		$('.menu-toggle').toggleClass('active');
-			
+		$('body').toggleClass('menu_open');
 		$(".heade_mob_menu").slideToggle();
 	});
 

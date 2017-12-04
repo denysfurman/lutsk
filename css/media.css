@@ -17,7 +17,7 @@
 	    line-height: 31px;
 	    margin-bottom: 70px;
 	    font-size: 27px;
-	    letter-spacing: 1px;
+	   
 	}
 	.about {
   
@@ -38,12 +38,12 @@
 	}
 	.content .breakebrans:after {
    
-	    right: -15px;
+	    
 	    position: absolute;
 	}
 	.contacts_about .title:after {
   		width: 100%;
-	    left: -15px;
+	    
 	    position: absolute;
 	}
 	#sync1.owl-theme {
@@ -54,6 +54,19 @@
 	.thumb_slider {
     	margin-top: 100px;
 	}
+	.service .service_text .title:after {
+	   
+	    width: 100%;
+	    
+	   
+	   
+	}
+	.service .service_text{
+		padding: 0;
+	}
+	.service .service_text.left_part {
+	   padding: 0;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -63,6 +76,26 @@
 	    margin: 83px auto 0;
 	    width: 700px;
 	    display: table;
+	}
+	.service .service_text .title:after {
+	   
+	  
+	    
+	    right: 0;
+	   
+	}
+	.service .service_img:after {
+   
+   
+	    left: 0;
+	}
+	.service .service_text.left_part .title:after {
+	    
+	    left: 0;
+	}
+	.service .service_img.right_part:after {
+	    right: 0;
+	    left: inherit;
 	}
 	.container{
 		width: 100%;
@@ -104,6 +137,18 @@
 	}
 	#sync2.owl-theme .owl-prev {
 	    left: -11px;
+	}
+	.content .breakebrans:after {
+		 right: -15px;
+
+	}
+	.contacts_about .title:after {
+   
+	    left: -15px;
+	    
+	}
+	.descript_about.rotate_mob_2 span:after {
+		left: -15px;
 	}
 }
 
@@ -158,7 +203,8 @@
 	    display: table;
 	    width: 350px;
 	    margin: 0 auto;
-	    margin-top: 53px;
+	    margin-top: 13px;
+	    text-align: center;
 	}
 	.hotels .hotel_item {
 	    width: 100%;
@@ -170,7 +216,7 @@
 	}
 	.service .title {
     	font-size: 36px;
-	    letter-spacing: 4px;
+	    
 	    text-transform: uppercase;
 	    margin-top: 0;
 	    text-align: center;
@@ -216,7 +262,7 @@
 	    height: 10px;
 	    background-color: #b9e2b6;
 	    bottom: -40px;
-	    left: -112px;
+	    left: -15px;
 	    position: absolute;
 	}
 	.descript_about.rotate_mob_2 span{
@@ -248,6 +294,23 @@
 	}
 	.descript_about.hotel{
 		margin-bottom: 40px;
+	}
+	.footer_logo img{
+		display: table;
+		margin: 0 auto;
+	}
+	footer .footer_social {
+	    margin-top: 60px;
+	    display: table;
+	    margin: 37px auto;
+	    text-align: center;
+	}
+	.footer_bottom_line p {
+	    margin: 0;
+	    float: right;
+	    font-size: 15px;
+	    width: 100%;
+	    text-align: center;
 	}
 }
 
@@ -320,7 +383,7 @@
 	    width: 320px;
 	    left: calc(50% - 160px);
 	}
-	.main_text .main_text_img img {
+	 .main_text_img img {
 	    display: table;
 	    margin: 0px auto 0;
 	    width: 70%;
@@ -349,7 +412,7 @@
 	    font-size: 18px;
 	    margin: 0;
 	    margin-top: 44px;
-	    letter-spacing: 3px;
+	    
 	    height: auto;
 	    text-align: center;
 	    overflow-y: hidden;
@@ -380,7 +443,7 @@
 	    display: inline-block!important;
 	    width: 18px!important;
 	    height: 23px!important;
-	    left: 32px!important;
+	    left: 42px!important;
 	    bottom: -32px!important;
 	    position: absolute!important;
 	    background-image: url(../img/arrow_mob.png)!important;
@@ -417,7 +480,7 @@
 	    margin-left: 0;
 	}
 	footer .footer_social {
-	    letter-spacing: 1px;
+	   
 	    margin-top: 20px;
 	}
 	footer .footer_social p {
@@ -449,13 +512,14 @@
 	    text-align: center;
 	    width: 100%;
 	}
-	.heade_mob_menu{
-		position: absolute;
+	.heade_mob_menu {
+	    position: absolute;
 	    width: 100%;
-	    z-index: 100;
-	    background-color: blanchedalmond;
+	    z-index: 11;
+	    background-color: #fcd2d2;
 	    top: 70px;
 	    left: 0;
+	    height: calc(100vh - 70px);
 	}
 	.header_menu_wr {
 	    width: auto;
@@ -463,18 +527,22 @@
 	    float: left;
 	    width: 100%;
 	    padding: 0 30px;
+	        margin-bottom: 10px;
 	}
 	header .header_lang {
 	    display: inline-block;
 	    float: right;
-	    margin-top: 18px;
+	    margin-top: 25px;
+	    width: 100%;
 	}
 	header .header_contact {
-	    display: inline-block;
-	    float: left;
-	    width: 100%;
-	    padding: 0 30px 30px;
-
+	    display: table;
+	    float: none;
+	    width: 218px;
+	    padding: 0;
+	    margin: 0 auto;
+	    text-align: center;
+	    border-top: 2px solid #f3337c;
 	}
 	header .header_contact a {
     
@@ -496,7 +564,7 @@
 	  position: relative;
 	  margin-top: 13px;
 	    float: right;
-	    margin-right: 30px;
+	    margin-right: 10px;
 	}
 
 	.hamburger, .cross {
@@ -638,7 +706,7 @@
 	    font-weight: 700;
 	    line-height: 19px;
 	    font-variant: small-caps;
-	    letter-spacing: 1px;
+	
 	    text-align: justify;
 	}
 	.about:after {
@@ -652,7 +720,7 @@
 	}
 	.service .title {
     	font-size: 22px;
-	    letter-spacing: 4px;
+	    
 	    text-transform: uppercase;
 	    margin-top: 0;
 	    text-align: center;
@@ -685,16 +753,16 @@
 	    width: 100%;
 	}
 	.content {
-	    z-index: 10;
+	    z-index: 2;
 	    margin-top: 5px;
 	}
-	.main_text .main_text_img .title {
+	 .main_text_img .title {
 	    color: #fff;
 	    margin: 0;
 	    text-align: center;
 	    font-size: 24px;
 	}
-	.main_text .main_text_img .title_descr {
+	 .main_text_img .title_descr {
 	    font-size: 16px;
 	    margin-top: 20px;
 	    color: #fff;
@@ -717,7 +785,7 @@
 	    margin-top: 15px;
 	    display: table;
 	    float: none!important;
-	    letter-spacing: 4px;
+	  
 	    margin-bottom: 55px;
 	}
 	.open_mob_text:after {
@@ -734,9 +802,9 @@
 	    transform: rotate(0deg)!important;
 	}
 	.open_mob_text.active:after {
-	    -webkit-transform: rotate(90deg);
-	    -ms-transform: rotate(90deg);
-	    transform: rotate(90deg);
+	    -webkit-transform: rotate(180deg)!important;
+	    -ms-transform: rotate(180deg)!important;
+	    transform: rotate(180deg)!important;
 	}
 	.thumb_slider {
 	    margin-top: 50px;
@@ -746,9 +814,40 @@
 	}
 	.service .service_text span.butt{
 		position: relative;
-		z-index: 11;
+		z-index: 4;
 	}
-
+	header .header_menu {
+	    display: inline-block;
+	    float: left;
+	    margin-top: 25px;
+	    width: 100%;
+	}
+	header .header_menu li {
+	    display: inline-block;
+	    float: left;
+	    margin-right: 0;
+	    width: 100%;
+	    margin-bottom: 15px;
+	    text-align: center;
+	}
+	header .header_lang li {
+	    display: inline-block;
+	    width: 100%;
+	    margin-bottom: 15px;
+	    text-align: center;
+	}
+	header .header_contact a.email {
+    	margin-left: 0;
+    	margin-top: 27px;
+	}
+	.hotels .mobile_item_slider .owl-next {
+	   
+	    top: 60px;
+	}
+	.hotels .mobile_item_slider .owl-prev {
+    	
+    	top: 60px;
+	}
 
 }
 
@@ -760,6 +859,18 @@
 
 	
 	}
+	.button {
+	    width: 140px;
+	    height: 39px;
+	    border: 2px solid #f3337c;
+	    border-radius: 25px;
+	    text-align: center;
+	    font-size: 12px;
+	    line-height: 40px;
+	    color: #000;
+	    display: table;
+	    margin: 0 auto;
+	}
 }
 
 /* Custom, iPhone Retina */
@@ -767,10 +878,12 @@
 	.hotels .mobile_item_slider .owl-next {
 	    position: absolute;
 	    right: -2px;
+	    top: 55px;
 	}
 	.hotels .mobile_item_slider .owl-prev {
     	position: absolute;
     	left: -2px;
+    	top: 55px;
 	}
 	.service .service_candle {
 	    margin-top: 61px;

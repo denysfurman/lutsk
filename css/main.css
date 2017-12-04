@@ -4,10 +4,17 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.4;
-  font-family: "ComfortaaBold";
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700 !important;
   overflow-x: hidden;
   background-color: #fffcf4;
   color: #000;
+  letter-spacing: 0px !important;
+}
+
+body.menu_open {
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .container-fluid {
@@ -40,6 +47,7 @@ a:hover, a:active, a:focus {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   outline: none;
+  color: #ff0061;
 }
 
 .hotels.active a {
@@ -109,31 +117,30 @@ textarea:focus::-webkit-input-placeholder, textarea:focus::-moz-placeholder, tex
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  margin-right: 10px;
+  width: 5px;
+  margin-right: 5px;
   cursor: pointer;
 }
 
 ::-webkit-scrollbar-track {
   -webkit-border-radius: 5px;
   border-radius: 0px;
-  margin-right: 6px;
+  margin-right: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 5px;
   border-radius: 0px;
-  background: #f3f4f7;
-  margin-right: 10px;
+  background: #f3337c;
+  margin-left: 0px;
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: #f3f4f7;
+  background: #f3337c;
 }
 
 h1, .title {
   font-size: 36px;
-  letter-spacing: 5px;
   text-transform: uppercase;
   margin-top: 0;
 }
@@ -149,7 +156,6 @@ h1, .title {
   color: #000;
   display: table;
   margin: 0 auto;
-  letter-spacing: 2px;
 }
 
 .button:hover {
@@ -170,7 +176,7 @@ header {
   background-color: #fcd2d2;
   position: relative;
   min-height: 100px;
-  z-index: 10;
+  z-index: 20;
 }
 
 header .header_logo {
@@ -199,6 +205,10 @@ header .header_contact a {
   margin-left: 20px;
 }
 
+header .header_contact a:hover, header .header_contact a:active, header .header_contact a:focus {
+  color: #ff0061;
+}
+
 header .header_contact a.email {
   font-size: 12px;
 }
@@ -218,7 +228,6 @@ header .header_menu li {
 header .header_menu li a {
   font-size: 14px;
   color: #000;
-  letter-spacing: 1px;
 }
 
 header .header_menu li a:hover, header .header_menu li a.current {
@@ -240,7 +249,6 @@ header .header_lang li {
 header .header_lang li a {
   font-size: 14px;
   color: #000;
-  letter-spacing: 1px;
 }
 
 header .header_lang li a:hover, header .header_lang li a.current {
@@ -250,7 +258,7 @@ header .header_lang li a:hover, header .header_lang li a.current {
 .header_menu_wr {
   display: inline-block;
   float: right;
-  width: 325px;
+  width: 345px;
   margin-right: 20px;
 }
 
@@ -260,9 +268,14 @@ header .header_lang li a:hover, header .header_lang li a.current {
   height: calc(100vh - 100px);
   max-height: 1200px;
   min-height: 500px;
+  display: inline-block;
+  position: relative;
   background-image: url("../img/main_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.main_slider_content {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: -webkit-box;
@@ -286,23 +299,30 @@ header .header_lang li a:hover, header .header_lang li a.current {
   -ms-flex-align: center;
   -webkit-box-align: center;
   align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  left: 0;
+  right: 0;
+  top: calc(50% - 175px);
+  z-index: 2;
 }
 
-.main_text .main_text_img .title {
+.main_text_img .title {
   color: #fff;
   margin: 0;
   text-align: center;
   font-size: 48px;
 }
 
-.main_text .main_text_img .title_descr {
+.main_text_img .title_descr {
   font-size: 24px;
   margin-top: 50px;
   color: #fff;
   text-align: center;
 }
 
-.main_text .main_text_mangala {
+.main_text_mangala {
   display: table;
   margin: -7px auto 0;
 }
@@ -355,15 +375,14 @@ header .header_lang li a:hover, header .header_lang li a.current {
   display: table;
   margin: 60px auto 0;
   position: relative;
-  z-index: 10;
+  z-index: 2;
 }
 
 .about .about_text p {
   font-size: 15px;
   font-weight: 700;
   line-height: 22px;
-  font-variant: small-caps;
-  letter-spacing: 1.3px;
+  font-variant: normal;
   text-align: justify;
 }
 
@@ -384,7 +403,7 @@ header .header_lang li a:hover, header .header_lang li a.current {
 .about .title {
   text-align: center;
   position: relative;
-  z-index: 10;
+  z-index: 2;
 }
 
 .service {
@@ -393,7 +412,7 @@ header .header_lang li a:hover, header .header_lang li a.current {
   margin-top: 60px;
   margin-bottom: 80px;
   position: relative;
-  z-index: 11;
+  z-index: 4;
 }
 
 .service .service_img {
@@ -410,16 +429,17 @@ header .header_lang li a:hover, header .header_lang li a.current {
 .service .service_img:after {
   content: "";
   display: inline-block;
-  max-width: 573px;
-  width: 100%;
+  width: calc(50vw - 150px);
   height: 13px;
   background-color: #b9e2b6;
   bottom: -28px;
   position: absolute;
+  left: calc(-50vw + 670px);
 }
 
 .service .service_img.right_part:after {
-  right: 0;
+  right: calc(-50vw + 670px);
+  left: inherit;
 }
 
 .service .service_candle {
@@ -446,7 +466,7 @@ header .header_lang li a:hover, header .header_lang li a.current {
 .service .service_text.left_part .title:after {
   bottom: -40px;
   right: inherit;
-  left: -112px;
+  left: calc(-50vw + 670px - 112px);
 }
 
 .service .service_text .title {
@@ -456,19 +476,17 @@ header .header_lang li a:hover, header .header_lang li a.current {
   margin-bottom: 110px;
   font-size: 36px;
   font-size: 36px;
-  letter-spacing: 4px;
   text-transform: uppercase;
 }
 
 .service .service_text .title:after {
   content: "";
   display: inline-block;
-  max-width: 477px;
-  width: 100%;
+  width: calc(50vw - 150px);
   height: 20px;
   background-color: #f0b5b5;
   bottom: -40px;
-  right: -112px;
+  right: calc(-50vw + 670px - 112px);
   position: absolute;
 }
 
@@ -477,7 +495,7 @@ header .header_lang li a:hover, header .header_lang li a.current {
   margin: 0;
   font-weight: 700;
   line-height: 22px;
-  font-variant: small-caps;
+  font-variant: normal;
   text-align: justify;
 }
 
@@ -501,8 +519,8 @@ header .header_lang li a:hover, header .header_lang li a.current {
   transform: rotate(180deg);
 }
 
-.service .service_text span.butt:hover {
-  color: #111;
+.service .service_text span.butt:hover, .service .service_text span.butt:active, .service .service_text span.butt:focus {
+  color: #ff0061;
 }
 
 .service .service_text span.butt:after {
@@ -573,7 +591,6 @@ header .header_lang li a:hover, header .header_lang li a.current {
   font-size: 18px;
   margin: 0;
   margin-top: 44px;
-  letter-spacing: 3px;
   height: 70px;
   text-align: center;
   overflow-y: hidden;
@@ -599,7 +616,6 @@ footer .footer_logo {
 }
 
 footer .footer_social {
-  letter-spacing: 1px;
   margin-top: 60px;
 }
 
@@ -618,12 +634,16 @@ footer .footer_social p a {
 }
 
 footer .footer_social p a:hover {
-  color: #337ab7;
+  color: #fff;
 }
 
 footer .footer_social a {
   font-size: 18px;
   color: #000;
+}
+
+footer .footer_social a:hover, footer .footer_social a:active, footer .footer_social a:focus {
+  color: #ff0061;
 }
 
 .footer_contact {
@@ -637,7 +657,6 @@ footer .footer_social a {
   font-size: 18px;
   width: 100%;
   display: block;
-  letter-spacing: 0.5px;
 }
 
 .footer_contact div:last-child {
@@ -671,7 +690,7 @@ section {
 }
 
 .content {
-  z-index: 10;
+  z-index: 2;
   margin-top: 35px;
 }
 
@@ -692,12 +711,11 @@ section {
 .content .breakebrans:after {
   content: "";
   display: inline-block;
-  max-width: 477px;
-  width: 100%;
+  width: calc(50vw - 150px);
   height: 20px;
   background-color: #f0b5b5;
   bottom: -40px;
-  right: -112px;
+  right: calc(-50vw + 576px);
   position: absolute;
 }
 
@@ -756,11 +774,11 @@ section {
 .contacts_about .title:after {
   content: "";
   display: inline-block;
-  width: 490px;
+  width: calc(50vw - 150px);
   height: 10px;
   background-color: #b9e2b6;
   bottom: -20px;
-  left: -112px;
+  left: calc(-50vw + 576px);
   position: absolute;
 }
 
@@ -802,7 +820,7 @@ section {
 
 .thumb_slider {
   margin-top: 150px;
-  z-index: 10;
+  z-index: 2;
   display: inline-block;
   width: 100%;
 }
