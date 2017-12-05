@@ -109,26 +109,24 @@ $(document).ready(function() {
 
 
 $(function() {
-   	
-   	$('.service .butt').on('click',function(){
-		 
-    	
-	   	$(this).toggleClass("active");
-	   	$(this).parents(".service").find(".hotels").toggleClass("active");
-	
-		
 
+
+
+
+// animation
+  $('section').animated('fadeIn , fadeIn');
+
+// servise butt
+  $('.service .butt').on('click',function(){
+		$(this).toggleClass("active");
+	  $(this).parents(".service").find(".hotels").toggleClass("active");
 	});
 
-	// animated
 
-	// $('.service_img.left_part').animated('bounceInLeft' , 'bounceInLeft' );
-	// $('.service_img.right_part').animated('bounceInRight' , 'bounceInRight' );
-	// $('.service_text h1').animated('zoomIn' , 'zoomIn' );
 	
 	//slider mobile
 		$('.mobile_item_slider').owlCarousel({
-			items:1,
+			 items:1,
 		    loop:true,
 		    margin:0,
 		   	nav:true,
@@ -192,6 +190,9 @@ $(function() {
 	};
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
+  
+
+  
 	
 });
 

@@ -483,6 +483,8 @@ header .header_lang li a:hover, header .header_lang li a.current {
   margin-top: 55px;
   display: block;
   cursor: pointer;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
 }
 
 .service .service_text span.butt.right {
@@ -490,14 +492,34 @@ header .header_lang li a:hover, header .header_lang li a.current {
 }
 
 .service .service_text span.butt.right::after {
-  left: -50px;
+  left: -48px;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
+.service .service_text span.butt.right:hover, .service .service_text span.butt.right:active, .service .service_text span.butt.right:focus {
+  color: #ff0061;
+}
+
+.service .service_text span.butt.right:hover:after, .service .service_text span.butt.right:active:after, .service .service_text span.butt.right:focus:after {
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  bottom: -33px;
+}
+
 .service .service_text span.butt:hover, .service .service_text span.butt:active, .service .service_text span.butt:focus {
   color: #ff0061;
+}
+
+.service .service_text span.butt:hover:after, .service .service_text span.butt:active:after, .service .service_text span.butt:focus:after {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
 }
 
 .service .service_text span.butt:after {
@@ -509,6 +531,9 @@ header .header_lang li a:hover, header .header_lang li a.current {
   bottom: -28px;
   position: absolute;
   background-image: url("../img/arrow-03.png");
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 .hotels {
@@ -970,4 +995,14 @@ section {
   background-color: #b9e2b6;
   bottom: -85px;
   position: absolute;
+}
+
+.slider {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.owl-carousel {
+  display: block !important;
 }

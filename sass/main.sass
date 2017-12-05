@@ -368,7 +368,7 @@ header
       content: ""
       display: inline-block
      
-      width: calc(50vw - 150px);
+      width: calc(50vw - 150px)
       height: 13px
       background-color: #b9e2b6
       bottom: -28px
@@ -419,7 +419,7 @@ header
         content: ""
         display: inline-block
        
-        width: calc(50vw - 150px);
+        width: calc(50vw - 150px)
         height: 20px
         background-color: #f0b5b5
         bottom: -40px
@@ -440,16 +440,29 @@ header
       margin-top: 55px
       display: block
       cursor: pointer
+      -webkit-transform: perspective(1px) translateZ(0)
+      transform: perspective(1px) translateZ(0)
       &.right
         float: right
         &::after 
          
-          left: -50px
+          left: -48px
          
           transform: rotate(180deg)
+        &:hover, &:active, &:focus
+          color: #ff0061
+          &:after
+            -webkit-transform: translateY(4px)
+            transform: translateY(4px)
+            transform: rotate(180deg)
+            bottom: -33px
 
       &:hover, &:active, &:focus
         color: #ff0061
+        &:after
+          -webkit-transform: translateY(5px)
+          transform: translateY(5px)
+
       &:after
         content: ""
         display: inline-block
@@ -459,6 +472,11 @@ header
         bottom: -28px
         position: absolute
         background-image: url("../img/arrow-03.png")
+        
+        -webkit-transition-duration: 0.3s
+        transition-duration: 0.3s
+       
+        
 
 .hotels
   width: 100%
@@ -598,7 +616,7 @@ section
     &:after
       content: ""
       display: inline-block
-      width: calc(50vw - 150px);
+      width: calc(50vw - 150px)
       height: 20px
       background-color: #f0b5b5
       bottom: -40px
@@ -649,7 +667,7 @@ section
     &:after
       content: ""
       display: inline-block
-      width: calc(50vw - 150px);
+      width: calc(50vw - 150px)
       
       height: 10px
       background-color: #b9e2b6
@@ -821,8 +839,17 @@ section
     text-transform: inherit
     &:after 
    
-      height: 15px;
-      background-color: #b9e2b6;
+      height: 15px
+      background-color: #b9e2b6
       bottom: -85px
      
       position: absolute
+
+.slider
+  display: inline-block
+  width: 100%
+  height: auto
+
+.owl-carousel
+  display: block!important
+
