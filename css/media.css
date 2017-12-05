@@ -67,6 +67,9 @@
 	.service .service_text.left_part {
 	   padding: 0;
 	}
+	.about:before{
+		display: none;
+	}
 }
 
 /* Medium Devices, Desktops */

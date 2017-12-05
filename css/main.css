@@ -250,6 +250,9 @@ header .header_lang li a:hover, header .header_lang li a.current {
   background-image: url("../img/main_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-position: center;
 }
 
 .main_slider_content {
@@ -346,13 +349,29 @@ header .header_lang li a:hover, header .header_lang li a.current {
   background-image: linear-gradient(to right, #f0b5b5 0%, #b9e2b6 100%);
 }
 
+.about:before {
+  content: "";
+  top: -130px;
+  opacity: 0.3;
+  width: 100%;
+  max-width: 1200px;
+  left: calc(50% - 600px);
+  height: 900px;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: 0;
+  background-image: url("../img/mandala.png");
+}
+
 .about .about_text {
   display: inline-block;
   width: 540px;
   display: table;
   margin: 60px auto 0;
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 .about .about_text p {
@@ -365,14 +384,14 @@ header .header_lang li a:hover, header .header_lang li a.current {
 
 .about .about_text .about_text_left_img {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   left: -318px;
   top: 9px;
 }
 
 .about .about_text .about_text_right_img {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   right: -363px;
   top: -221px;
 }
@@ -380,7 +399,7 @@ header .header_lang li a:hover, header .header_lang li a.current {
 .about .title {
   text-align: center;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .service {
@@ -503,13 +522,7 @@ header .header_lang li a:hover, header .header_lang li a.current {
 }
 
 .service .service_text span.butt.right:hover:after, .service .service_text span.butt.right:active:after, .service .service_text span.butt.right:focus:after {
-  -webkit-transform: translateY(4px);
-  -ms-transform: translateY(4px);
-  transform: translateY(4px);
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  bottom: -33px;
+  left: -55px;
 }
 
 .service .service_text span.butt:hover, .service .service_text span.butt:active, .service .service_text span.butt:focus {
@@ -517,9 +530,7 @@ header .header_lang li a:hover, header .header_lang li a.current {
 }
 
 .service .service_text span.butt:hover:after, .service .service_text span.butt:active:after, .service .service_text span.butt:focus:after {
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
+  left: 2px;
 }
 
 .service .service_text span.butt:after {
@@ -1001,8 +1012,4 @@ section {
   display: inline-block;
   width: 100%;
   height: auto;
-}
-
-.owl-carousel {
-  display: block !important;
 }
