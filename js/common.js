@@ -175,7 +175,7 @@ $(function() {
 		    loop:true,
 		    margin:0,
 		   	nav:true,
-		   
+		    
 		    
 		    navText:[
 	            "<i class='fa fa-angle-left fa-2x'></i>",
@@ -190,12 +190,15 @@ $(function() {
 		//slider mobile
 		$('.main_slider').owlCarousel({
 		
-		    loop:true,
-		    margin:0,
-		   	nav:false,
+	    loop:true,
+	    margin:0,
+	   	nav:false,
 			items:1,
+      smartSpeed: 1300,
+
 			autoplay:true,
-	    autoplayTimeout:8000
+      
+	    autoplayTimeout: 4000
 		  
 		});	
 
