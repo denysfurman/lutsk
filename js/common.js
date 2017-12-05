@@ -215,7 +215,13 @@ $(function() {
 		$('.menu-toggle').toggleClass('active');
 		$('body').toggleClass('menu_open');
 		$(".heade_mob_menu").slideToggle();
+
+    $(window).load(windowSize); 
+    $(window).resize(windowSize);
+
 	});
+
+
 
   //open text mob
 
