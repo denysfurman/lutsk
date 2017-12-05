@@ -195,7 +195,7 @@ $(function() {
 		   	nav:false,
 			items:1,
 			autoplay:true,
-	    	autoplayTimeout:4000
+	    autoplayTimeout:8000
 		  
 		});	
 
