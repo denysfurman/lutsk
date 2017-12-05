@@ -523,6 +523,8 @@
 	    top: 70px;
 	    left: 0;
 	    height: calc(100vh - 70px);
+	    overflow-y: auto;
+    	padding-bottom: 20px;
 	}
 	.header_menu_wr {
 	    width: auto;
